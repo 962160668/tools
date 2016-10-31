@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <cmath>
+using namespace std;
+
+double findlength(double r){
+    double k;
+    k = 1/(log(1-0.947*r));
+    return -k;
+}
+
+int main(){
+    bool notover = true; 
+    
+    while(notover)
+    {
+    cout<<"enter ratio(666_for_quit):"<<endl;
+    double ratio;
+    cin>>ratio;
+    if(ratio == 666)
+    {return 1;}
+
+    double out = findlength(ratio);
+
+    cout<<out<<endl;
+   
+    }
+ 
+   
+}
